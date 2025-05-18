@@ -9,11 +9,11 @@ export class AuthController {
 
   @Post('signup')
   signUp() {
-    return 'im am sign up';
+    return this.authService.signUp();
   }
 
   @Post('signin')
   signIn() {
-    return 'im am sign in';
+    return this.authService.login();
   }
 }
